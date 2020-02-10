@@ -34,8 +34,6 @@ for item in foodOrdered {
     orderAmt += itemPrice
 }
 
-print("**let us see if this works**")
-
 taxCalculated = orderAmt * taxRate //this is wrong... look up rounding for decimals
 tipCalculated = orderAmt * 0.20
 //..if calculating as a number and not converting to string
