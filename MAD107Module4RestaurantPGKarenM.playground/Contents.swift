@@ -7,9 +7,9 @@ var str = "Hello, playground"
 
 //.. variables and initializations
 
-let foodOrdered = [["Cheese Burger", 3.00],["Frenchfries", 2.25],["Soft Drink", 1.00],["Chicken Sandwich", 3.25], ["Gyro", 4.25]]
+let foodOrdered = [["Cheese Burger", 3.00],["French Fries", 2.25],["Soft Drink", 1.00],
+                   ["Chicken Sandwich", 3.25], ["Gyro", 4.25], ["Onion Rings", 2.25], ["Cheese Stix", 1.25]]
 let taxRate = 0.075
-
 
 var itemOrdered: String = ""
 var itemPrice: Double = 0.00
@@ -33,6 +33,8 @@ for item in foodOrdered {
     i += 1
     orderAmt += itemPrice
 }
+
+print("**let us see if this works**")
 
 taxCalculated = orderAmt * taxRate //this is wrong... look up rounding for decimals
 tipCalculated = orderAmt * 0.20
